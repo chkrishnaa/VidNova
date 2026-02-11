@@ -32,7 +32,7 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-2 items-start">
           {/* LEFT: About VidNova */}
           <div className="space-y-8">
-            <Card className="border-muted bg-gradient-to-b from-background to-muted/40">
+            <Card className="border-foreground/20 bg-gradient-to-b from-background to-muted/40">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Sparkles className="h-5 w-5 text-primary" />
@@ -84,7 +84,7 @@ export default function AboutPage() {
                   },
                 ].map((item, i) => (
                   <CarouselItem key={i}>
-                    <Card className="border-muted">
+                    <Card className="border-foreground/20">
                       <CardContent className="p-6 space-y-3">
                         <item.icon className="h-8 w-8 text-primary" />
                         <h3 className="text-xl font-semibold">{item.title}</h3>
@@ -99,7 +99,7 @@ export default function AboutPage() {
 
           {/* RIGHT: How it Works */}
           <div>
-            <Card className="border-muted">
+            <Card className="border-foreground/20">
               <CardHeader>
                 <CardTitle>How VidNova Works</CardTitle>
               </CardHeader>

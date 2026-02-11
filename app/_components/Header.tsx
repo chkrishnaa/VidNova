@@ -42,9 +42,9 @@ export default function Header() {
                   <Button>Dashboard</Button>
                 </Link>
 
-                {user.photoURL && (
+                {user.pictureUrl && (
                   <Image
-                    src={user.photoURL}
+                    src={user.pictureUrl}
                     alt="user-image"
                     width={40}
                     height={40}

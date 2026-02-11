@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Outfit } from "next/font/google";
 import "./globals.css";
-import Provider from "./provider";
-
-
+import { ConvexClientProvider } from "./ConvexClientProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${outfit.className}`}>
-        <Provider>{children}</Provider>
+        <ConvexClientProvider>{children}</ConvexClientProvider>
       </body>
     </html>
   );

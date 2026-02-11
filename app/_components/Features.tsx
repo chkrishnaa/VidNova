@@ -75,10 +75,10 @@ export default function Features() {
             <Card
               key={i}
               className="
-                group relative overflow-hidden
+                group relative overflow-hidden border-2
                 transition-all duration-300
                 hover:-translate-y-1 hover:shadow-xl
-                hover:border-primary/40
+                hover:border-primary/30
               "
             >
               {/* glow effect */}

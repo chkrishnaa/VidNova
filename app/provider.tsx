@@ -25,13 +25,14 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
           pictureUrl: user?.photoURL || "",
         });
         console.log(result);
-        setUser(result);
+        setUser(user);
       }
     });
     return () => unsubscribe();
   }, []);
-  const value: AuthContextType = { user };
-
+  const value: AuthContextType = {
+    user,
+  }
   return (
     <AuthContext.Provider value={value}>
       {" "}
